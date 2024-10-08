@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -218,7 +217,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         });
         dialog.show();
-        final MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.win2);
+        final MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.win);
         mp.start();
     }
 
@@ -242,7 +241,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         });
         dialog.show();
-        final MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.lose1);
+        final MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.lose);
         mp.start();
     }
 
