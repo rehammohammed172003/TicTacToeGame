@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".SplashScreenActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:id="@+id/card1"
+            android:src="@drawable/x"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+
+
+            />
+        <ImageView
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:src="@drawable/ic_baseline_signal_cellular_alt_1_bar_24"
+            android:background="@color/light_gray"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            />
+        <ImageView
+            android:id="@+id/card2"
+            android:src="@drawable/o"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_3sdp"
+        android:src="@drawable/ic_baseline_maximize_24"
+        android:background="@color/light_gray"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/card3"
+            android:src="@drawable/o"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+
+            />
+        <ImageView
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:src="@drawable/ic_baseline_signal_cellular_alt_1_bar_24"
+            android:background="@color/light_gray"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            />
+        <ImageView
+            android:id="@+id/card4"
+            android:src="@drawable/x"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="serif"
+        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/_26ssp"
+        android:textStyle="bold"
+        />
+
+
+
+
+</LinearLayout>

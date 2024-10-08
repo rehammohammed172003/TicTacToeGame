@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayoutLosingDialog"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/losingDialog"
+        android:background="@drawable/custom_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/textDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Game Over"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/_45sdp"
+            app:layout_constraintTop_toTopOf="@+id/losingDialog"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            android:textColor="@color/light_red"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/textDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Luck Next Time!"
+            app:layout_constraintTop_toBottomOf="@+id/textDialogTitle"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/btnDialog3"
+
+            />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnDialog3"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/textDialogMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnDialog4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:backgroundTint="@color/light_red"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:elevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:strokeColor="@color/extra_light_red"
+            app:strokeWidth="@dimen/_4sdp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_refresh_24"
+                    app:tint="@color/white"
+                    android:padding="@dimen/_8sdp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnDialog4"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/textDialogMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:backgroundTint="@color/light_red"
+            app:elevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:strokeColor="@color/extra_light_red"
+            app:strokeWidth="@dimen/_4sdp"
+            app:layout_constraintEnd_toStartOf="@+id/btnDialog3"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/home"
+                    app:tint="@color/white"
+                    android:padding="@dimen/_8sdp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageWinner"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/trophy"
+        app:layout_constraintTop_toTopOf="@+id/losingDialog"
+        app:layout_constraintBottom_toTopOf="@id/losingDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

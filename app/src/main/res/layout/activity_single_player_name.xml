@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".SinglePlayerNameActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_270sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        android:elevation="@dimen/_15sdp"
+        android:backgroundTint="@color/white"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/textNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="-: Enter Your Name :-"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_20ssp"
+                android:layout_marginBottom="@dimen/_10sdp"
+
+                />
+
+
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:fontFamily="casual"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center"
+                android:inputType="textPersonName"
+
+                android:backgroundTint="@color/light_blue"
+                android:layout_marginBottom="@dimen/_30sdp"
+
+
+                />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn1Launch"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:fontFamily="serif"
+                android:text="Launch"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp"
+                android:backgroundTint="@color/blue"
+                app:elevation="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_25sdp"
+                android:textAllCaps="false"
+                app:strokeColor="@color/extra_light_blue"
+                app:strokeWidth="@dimen/_6sdp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Launch"
+                        android:textSize="@dimen/_20ssp"
+                        android:textColor="@color/white"
+                        android:fontFamily="serif"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_10sdp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:src="@drawable/rocket_launch"
+                        app:tint="@color/white"
+
+                        />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>

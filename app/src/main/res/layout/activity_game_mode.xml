@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameModeActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/_28ssp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/subtitle1"
+
+        />
+
+    <TextView
+        android:id="@+id/subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-:  Choose Your Mark  :-"
+        android:textSize="@dimen/_17ssp"
+        android:fontFamily="casual"
+        android:textColor="@color/gray"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/xo_mode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.59"
+        app:layout_constraintHeight_percent="0.11"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_10sdp"
+        app:strokeWidth="@dimen/_6sdp"
+        app:strokeColor="@color/light_gray"
+
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/x"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.48"
+                app:layout_constraintHeight_percent="0.95"
+                android:src="@drawable/x"
+                android:paddingVertical="@dimen/_4sdp"
+                android:elevation="@dimen/_30sdp"
+                android:padding="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/o"
+                android:background="@color/beige"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/o"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.48"
+                app:layout_constraintHeight_percent="0.95"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/o"
+                android:paddingVertical="@dimen/_4sdp"
+                android:elevation="@dimen/_30sdp"
+                app:layout_constraintStart_toEndOf="@+id/x"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-:  Select Game Mode  :-"
+        android:textSize="@dimen/_17ssp"
+        android:fontFamily="casual"
+        android:textColor="@color/gray"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@id/xo_mode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/play_with_bot"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_25sdp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardElevation="@dimen/_10sdp"
+        app:strokeWidth="@dimen/_6sdp"
+        app:strokeColor="@color/extra_light_blue"
+
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:src="@drawable/robot"
+
+                android:layout_marginEnd="@dimen/_18sdp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With Bot"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+
+                />
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/play_with_friend"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintTop_toBottomOf="@+id/play_with_bot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:cardCornerRadius="@dimen/_25sdp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardElevation="@dimen/_10sdp"
+        app:strokeWidth="@dimen/_6sdp"
+        app:strokeColor="@color/extra_light_blue"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:src="@drawable/friend"
+                app:tint="@color/white"
+                android:layout_marginEnd="@dimen/_18sdp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With Friend"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+
+                />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
