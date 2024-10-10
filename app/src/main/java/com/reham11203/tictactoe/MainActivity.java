@@ -117,15 +117,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void makeMove(ImageView selectedButton, int gameStatePointer) {
-        if (activePlayer) {
-            selectedButton.setAlpha(1.0f);
-            selectedButton.setImageResource(R.drawable.x);
-            gameState[gameStatePointer] = 0;
-        } else {
-            selectedButton.setAlpha(1.0f);
-            selectedButton.setImageResource(R.drawable.o);
-            gameState[gameStatePointer] = 1;
+        if(getIntent().getStringExtra("gameMode").equals("x")){
+            if (activePlayer) {
+                selectedButton.setAlpha(1.0f);
+                selectedButton.setImageResource(R.drawable.x);
+                gameState[gameStatePointer] = 0;
+            } else {
+                selectedButton.setAlpha(1.0f);
+                selectedButton.setImageResource(R.drawable.o);
+                gameState[gameStatePointer] = 1;
+            }
+        } else if (getIntent().getStringExtra("gameMode").equals("o")) {
+            if (activePlayer) {
+                selectedButton.setAlpha(1.0f);
+                selectedButton.setImageResource(R.drawable.o);
+                gameState[gameStatePointer] = 0;
+            } else {
+                selectedButton.setAlpha(1.0f);
+                selectedButton.setImageResource(R.drawable.x);
+                gameState[gameStatePointer] = 1;
+            }
         }
+
         roundCount++;
         activePlayer = !activePlayer;
     }
